@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@color/bg"
+    tools:context=".MyCalendar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myCalendarToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:navigationIcon="?attr/homeAsUpIndicator">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myCalendarToolbar"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+    <CalendarView
+        android:id="@+id/myCalendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/viewDatebtn"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+        android:background="@drawable/button_users"
+        android:text="View Date"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/addactivitybtn"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="75dp"
+        android:background="@drawable/button_users"
+        android:text="Add Activity"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

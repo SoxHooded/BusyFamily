@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/bg"
+    android:padding="2dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="Choose color"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/changeradiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+                android:layout_marginTop="15dp"
+                android:id="@+id/changeradioRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="changeColorRadio"
+                android:text="Red"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/changeradioBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:onClick="changeColorRadio"
+                android:text="Blue"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/changeradioGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:onClick="changeColorRadio"
+                android:text="Green"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/changeradioYellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:onClick="changeColorRadio"
+                android:text="Yellow"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/radioPurple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:onClick="changeColorRadio"
+                android:text="Purple"
+                android:textSize="24sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/bg"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/changeCancelbtn"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/red"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/changeDonebtn"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorPrimary"
+            android:text="Done" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

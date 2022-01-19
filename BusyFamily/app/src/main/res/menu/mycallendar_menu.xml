@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_myActivities"
+        android:icon="@drawable/ic_directions_bike_black_24dp"
+        android:title="Activities"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_myShopping"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Shopping Cart"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gmail.epsilon1011.busyfamily">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainMenu"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" android:screenOrientation="portrait"/>
+        <activity android:name=".Register" android:screenOrientation="portrait"/>
+        <activity android:name=".SetUsername" android:screenOrientation="portrait"/>
+        <activity android:name=".MyCalendar" android:screenOrientation="portrait"/>
+        <activity android:name=".FamilyCalendar" android:screenOrientation="portrait"/>
+        <activity android:name=".Invites" android:screenOrientation="portrait"/>
+        <activity android:name=".MyActivities" android:screenOrientation="portrait"/>
+        <activity android:name=".MyShopping" android:screenOrientation="portrait"/>
+        <activity android:name=".FamilyActivities" android:screenOrientation="portrait"/>
+        <activity android:name=".FamilyUsers" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FamilyChat"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FamilyShopping" android:screenOrientation="portrait"/>
+        <activity android:name=".FamilyAlbum" android:screenOrientation="portrait"/>
+        <activity android:name=".FamilyInvite" android:screenOrientation="portrait"/>
+        <activity android:name=".CreateUser" android:screenOrientation="portrait"/>
+        <activity android:name=".ImageFull" android:screenOrientation="portrait"/>
+        <activity android:name=".ChangeImage" android:screenOrientation="portrait"/>
+        <activity android:name=".FamilyViewActivities" android:screenOrientation="portrait"/>
+        <activity android:name=".ViewDate" android:screenOrientation="portrait"/>
+        <activity android:name=".FamilyViewDate" android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

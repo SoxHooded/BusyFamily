@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <color name="colorPrimary">#01a47e</color>
+    <color name="colorPrimaryDark">#bd0b5d97</color>
+    <color name="colorAccent">#bd0b5d97</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#ed5353</color>
+    <color name="bg">#769cd4ff</color>
+    <color name="black">#000000</color>
+    <color name="chat">#985d91fa</color>
+    <color name="album">#a7a6dcff</color>
+    <color name="transparent">#00000000</color>
+</resources>

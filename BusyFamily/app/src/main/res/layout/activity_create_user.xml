@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUser"
+    android:background="@color/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/createToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:navigationIcon="?attr/homeAsUpIndicator">
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/createNickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:hint="Choose a Nickname"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:textColorHighlight="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/createNickname"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:id="@+id/lay">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="Choose color"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    <RadioGroup
+        android:id="@+id/createradiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:layout_marginTop="15dp"
+            android:id="@+id/createradioRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="createColorRadio"
+            android:text="Red"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/createradioBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="createColorRadio"
+            android:text="Blue"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/createradioGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="createColorRadio"
+            android:text="Green"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/createradioYellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="createColorRadio"
+            android:text="Yellow"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/createradioPurple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="createColorRadio"
+            android:text="Purple"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createbtn"
+        android:layout_width="236dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttons"
+        android:text="Create User"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

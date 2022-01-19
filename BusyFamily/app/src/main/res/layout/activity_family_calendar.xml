@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".FamilyCalendar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/familyCalendarToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:navigationIcon="?attr/homeAsUpIndicator">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/familyCalendarToolbar"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <CalendarView
+            android:id="@+id/familyCalendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/familyViewbtn"
+            android:layout_width="220dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/button_users"
+            android:text="View Date"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/familyAddbtn"
+            android:layout_width="220dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/button_users"
+            android:text="Add Activity"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
